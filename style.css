@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body {
+  height:100vh;
+  background: rgb(51,102,204);
+}
+
+.container{
+  font-family: "Roboto", sans-serif;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+  margin: 2.5rem auto;
+}
+
+
+/* --button two-- */
+.two {
+  border: none;
+  /* padding: 1rem 4rem; */
+  width: 272px;
+  height:76px;
+  background: rgb(6,31,150);
+  color: white;
+  font-size:1.5rem;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+}
+
+/* .border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+} */
+
+/* .border-gradient-green {
+  border-image-source: linear-gradient(to right, rgb(148,197,23) 30%, rgb(6,31,150)70% );
+} */
+
+.two:hover {
+  color: rgb(148,197,23);
+}
+
+.two::before {
+  content:"";
+  position: absolute;
+  top: -10px;
+  left:-10px;
+  width: 24px;
+  height:24px;
+  /* background: rgb(51,102,204); */ 
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 4px;
+  border-image-source: linear-gradient(to right, rgb(148,197,23) 30%, rgb(6,31,150)70% );
+  border-right: 0;
+  border-bottom: 0;
+  transition: all 0.25s;
+}
+
+.two-down::before {
+  content:"";
+  position: absolute;
+  top: -10px;
+  left:-10px;
+  width: 24px;
+  height:24px;
+  /* background: rgb(51,102,204); */ 
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 4px;
+  border-image-source: linear-gradient(to bottom, rgb(148,197,23) 30%, rgb(6,31,150)70% );
+  border-right: 0;
+  border-bottom: 0;
+  transition: all 0.25s;
+}
+
+.two:hover::before {
+  height:100%;
+  width: 100%;
+}
+
+.two::after {
+  content:"";
+  position: absolute;
+  bottom: -10px;
+  right:-10px;
+  width: 24px;
+  height:24px;
+  /* background: rgb(51,102,204); */ 
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 4px;
+  border-image-source: linear-gradient(to right, rgb(148,197,23) 30%, rgb(6,31,150)70% );
+  border-left: 0;
+  border-top: 0;
+  transition: all 0.25s;
+}
+
+.two-down::after {
+  content:"";
+  position: absolute;
+  bottom: -10px;
+  right:-10px;
+  width: 24px;
+  height:24px;
+  /* background: rgb(51,102,204); */ 
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 4px;
+  border-image-source: linear-gradient(to bottom, rgb(148,197,23) 30%, rgb(6,31,150)70% );
+  border-left: 0;
+  border-top: 0;
+  transition: all 0.25s;
+}
+
+.two:hover::after {
+  height:100%;
+  width: 100%;
+} 
+
